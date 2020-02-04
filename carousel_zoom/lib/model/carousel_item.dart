@@ -10,8 +10,8 @@ class CarouselItem {
     return CarouselItem(
         id: parsedJson['id'],
         name: parsedJson['name'],
-        iconData: parsedJson['iconData'],
-        colors: parsedJson['colors']);
+        iconData: CardIconData.fromJson(parsedJson['iconData']),
+        colors: CardColor.fromJson(parsedJson['colors']));
   }
 }
 
@@ -20,6 +20,12 @@ class CardIconData {
   String fontFamily;
 
   CardIconData({this.codePoint, this.fontFamily});
+
+  factory CardIconData.fromJson(Map<String, dynamic> parsedJson) {
+    return CardIconData(
+        codePoint: parsedJson['codePoint'],
+        fontFamily: parsedJson['fontFamily']);
+  }
 }
 
 class CardColor {
@@ -29,4 +35,13 @@ class CardColor {
   String name;
 
   CardColor({this.card, this.icon, this.iconCircle, this.name});
+
+  factory CardColor.fromJson(Map<String, dynamic> parsedJson) {
+    return CardColor(
+      card: parsedJson['card'],
+      icon: parsedJson['icon'],
+      iconCircle: parsedJson["iconCircle"],
+      name: parsedJson["name"],
+    );
+  }
 }
