@@ -1,16 +1,16 @@
 class CarouselItem {
   int id;
   String name;
-  CardIconData icon;
+  CardIconData iconData;
   CardColor colors;
 
-  CarouselItem({this.id, this.name, this.icon, this.colors});
+  CarouselItem({this.id, this.name, this.iconData, this.colors});
 
   factory CarouselItem.fromJson(Map<String, dynamic> parsedJson) {
     return CarouselItem(
         id: parsedJson['id'],
         name: parsedJson['name'],
-        icon: parsedJson['icon'],
+        iconData: parsedJson['iconData'],
         colors: parsedJson['colors']);
   }
 }

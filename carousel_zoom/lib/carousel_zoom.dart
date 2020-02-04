@@ -87,8 +87,8 @@ class _CarouselState extends State<Carousel> {
                           width: 65 * resizeFactor,
                           height: 65 * resizeFactor,
                           child: Icon(
-                            (widget.listItens[index].icon != null &&
-                                    widget.listItens[index].icon != null)
+                            (widget.listItens[index].iconData != null &&
+                                    widget.listItens[index].iconData != null)
                                 ? Color(
                                     int.parse("0xff" +
                                         widget.listItens[index].colors.icon),
