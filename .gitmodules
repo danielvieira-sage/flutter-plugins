@@ -1,3 +1,0 @@
-[submodule "testWidget"]
-	path = testWidget
-	url = git@github.com:danielvieira-sage/flutter-plugins.git
