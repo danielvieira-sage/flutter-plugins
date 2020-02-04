@@ -6,7 +6,7 @@ class Hello extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Hello"),
+      child: Image.asset("lib/image.jpg"),
     );
   }
 }
