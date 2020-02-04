@@ -95,7 +95,7 @@ class _CarouselState extends State<Carousel> {
                                             .fontFamily !=
                                         null)
                                 ? IconData(
-                                    int.parse("0xff" +
+                                    int.parse("0xe" +
                                         widget.listItens[index].iconData
                                             .codePoint),
                                     fontFamily: widget
